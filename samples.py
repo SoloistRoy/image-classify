@@ -21,7 +21,6 @@ class Datum:
   Digits are from the MNIST dataset and face images are from the
   easy-faces and background categories of the Caltech 101 dataset.
 
-
   Each digit is 28x28 pixels, and each face/non-face image is 60x74
   pixels, each pixel can take the following values:
     0: no edge (blank)
