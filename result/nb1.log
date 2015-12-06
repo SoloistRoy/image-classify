@@ -1,0 +1,30 @@
+Doing classification
+--------------------------------------------------
+data:				digits
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		5000
+using smoothing parameter k=0.100000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+799 correct out of 1000 (79.9%).
+Testing...
+755 correct out of 1000 (75.5%).
+
+Doing classification
+--------------------------------------------------
+data:				digits
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		5000
+using smoothing parameter k=0.200000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+810 correct out of 1000 (81.0%).
+Testing...
+758 correct out of 1000 (75.8%).
+
