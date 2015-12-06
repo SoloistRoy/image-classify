@@ -1,0 +1,34 @@
+# neuralNet.py
+# Neural network implementation
+
+import util
+PRINT = True
+
+class NeuralNetClassifier:
+  """
+  Neural Network classifier.
+  
+  Note that the variable 'datum' in this code refers to a counter of features
+  (not to a raw samples.Datum).
+  """
+  def __init__( self, legalLabels):
+    self.legalLabels = legalLabels
+    self.type = "neuralnet"
+  
+  def train(self, trainingData, trainingLabels, validationData, validationLabels):
+    "Outside shell to call your method. Do not modify this method." 
+
+
+  def classify(self, data ):
+    """
+    Classifies each datum as the label that most closely matches the prototype vector
+    for that label.  See the project description for details.
+    Recall that a datum is a util.counter... 
+    """
+    guesses = []
+    for datum in data:
+      vectors = util.Counter()
+      for l in self.legalLabels:
+        vectors[l] = self.weights[l] * datum
+      guesses.append(vectors.argMax())
+    return guesses
