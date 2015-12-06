@@ -167,7 +167,7 @@ def readCommand( argv ):
         else:
             print "using smoothing parameter k=%f for naivebayes" % options.smoothing
     elif(options.classifier == NN):
-        classifier = neuralNet.NeuralNetClassifier(legalLabels, options.iterations, options.layerSize)
+        classifier = neuralNet.NeuralNetClassifier(legalLabels, options.iterations, options.layerSize, options.data)
         print "iterations:\t\t\t" + str(options.iterations)
         print "layer size:\t\t\t" + str(options.layerSize)
         print "using automatic tuning:\t\t" + str(options.autotune)

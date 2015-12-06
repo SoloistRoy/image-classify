@@ -46,7 +46,7 @@ class NeuralNetClassifier(classificationMethod.ClassificationMethod):
 
     def randomizeWeight(self):
         tmp = random.random()
-        return tmp if util.flipCoin() else -tmp
+        return tmp if util.flipCoin(0.5) else -tmp
 
 
 
@@ -90,7 +90,7 @@ class NeuralNetClassifier(classificationMethod.ClassificationMethod):
         sum = 0
         curData = self.data[-1]
         for k in range(len(self.predictionWeight)):
-            sum += (self.predictionWeight[k] * curData )
+            sum += (self.predictionWeight[k] * curData[k] )
         self.prediction = self.sigmod(sum)
 
     def calculateDelta(self):

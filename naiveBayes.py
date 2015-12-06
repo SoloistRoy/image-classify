@@ -6,9 +6,9 @@
 # John DeNero (denero@cs.berkeley.edu) and Dan Klein (klein@cs.berkeley.edu).
 # For more info, see http://inst.eecs.berkeley.edu/~cs188/sp09/pacman.html
 
-import util
 import math
 import classificationMethod
+import util
 
 class NaiveBayesClassifier(classificationMethod.ClassificationMethod):
     """
@@ -49,18 +49,33 @@ class NaiveBayesClassifier(classificationMethod.ClassificationMethod):
     def trainAndTune(self, trainingData, trainingLabels, validationData, validationLabels, kgrid):
         """
         Trains the classifier by collecting counts over the training data, and
-        stores the Laplace smoothed estimates so that they can be used to classify.
-        Evaluate each value of k in kgrid to choose the smoothing parameter 
-        that gives the best accuracy on the held-out validationData.
+        stores the Laplace smoothed estimates so that they can be used to
+        classify. Evaluate each value of k in kgrid to choose the smoothing
+        parameter that gives the best accuracy on the held-out validationData.
         
-        trainingData and validationData are lists of feature Counters.    The corresponding
-        label lists contain the correct label for each datum.
+        trainingData and validationData are lists of feature Counters. The
+        corresponding label lists contain the correct label for each datum.
         
         To get the list of all possible features or labels, use self.features and 
         self.legalLabels.
         """
+        
+        prior = util.Counter()
+        for i in trainingLabels:
+            priori[i] += 1
+        prior.normalize()
 
-        "*** YOUR CODE HERE ***"
+        ## Define: condCount[i] = #(f_j,y=label_i) where f_j is jth feature
+        condProb = []
+        for i in legalLabels:
+            condProb[i] = {}
+            for j in trainingData[0]:
+                pass
+        
+        for i, img in enumerate(trainingData):
+            cc = condCounts[trainingLabels[i]]
+            for j in img:
+                cc[(j, )] += 1
         util.raiseNotDefined()
                 
     def classify(self, testData):
