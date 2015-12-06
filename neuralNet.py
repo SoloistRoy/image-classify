@@ -84,6 +84,7 @@ class NeuralNetClassifier(classificationMethod.ClassificationMethod):
             nextData = self.data[i]
             for j in range(len(nextData)):
                 sum = 0
+                print curData
                 for k in range(len(curData)):
                     sum += (weight[k][j] * curData[k])
                 nextData[j] = self.sigmod(sum)
