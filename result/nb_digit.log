@@ -1,0 +1,750 @@
+Doing classification
+--------------------------------------------------
+data:				digits
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		5000
+using smoothing parameter k=0.100000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+799 correct out of 1000 (79.9%).
+Testing...
+755 correct out of 1000 (75.5%).
+
+Doing classification
+--------------------------------------------------
+data:				digits
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		5000
+using smoothing parameter k=0.200000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+810 correct out of 1000 (81.0%).
+Testing...
+758 correct out of 1000 (75.8%).
+
+Doing classification
+--------------------------------------------------
+data:				digits
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		5000
+using smoothing parameter k=0.300000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+811 correct out of 1000 (81.1%).
+Testing...
+763 correct out of 1000 (76.3%).
+
+Doing classification
+--------------------------------------------------
+data:				digits
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		5000
+using smoothing parameter k=0.400000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+816 correct out of 1000 (81.6%).
+Testing...
+764 correct out of 1000 (76.4%).
+
+Doing classification
+--------------------------------------------------
+data:				digits
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		5000
+using smoothing parameter k=0.500000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+818 correct out of 1000 (81.8%).
+Testing...
+766 correct out of 1000 (76.6%).
+
+Doing classification
+--------------------------------------------------
+data:				digits
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		5000
+using smoothing parameter k=0.600000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+818 correct out of 1000 (81.8%).
+Testing...
+768 correct out of 1000 (76.8%).
+
+Doing classification
+--------------------------------------------------
+data:				digits
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		5000
+using smoothing parameter k=0.700000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+818 correct out of 1000 (81.8%).
+Testing...
+769 correct out of 1000 (76.9%).
+
+Doing classification
+--------------------------------------------------
+data:				digits
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		5000
+using smoothing parameter k=0.800000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+818 correct out of 1000 (81.8%).
+Testing...
+770 correct out of 1000 (77.0%).
+
+Doing classification
+--------------------------------------------------
+data:				digits
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		5000
+using smoothing parameter k=0.900000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+818 correct out of 1000 (81.8%).
+Testing...
+771 correct out of 1000 (77.1%).
+
+Doing classification
+--------------------------------------------------
+data:				digits
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		5000
+using smoothing parameter k=1.000000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+818 correct out of 1000 (81.8%).
+Testing...
+771 correct out of 1000 (77.1%).
+
+Doing classification
+--------------------------------------------------
+data:				digits
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		5000
+using smoothing parameter k=1.100000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+818 correct out of 1000 (81.8%).
+Testing...
+771 correct out of 1000 (77.1%).
+
+Doing classification
+--------------------------------------------------
+data:				digits
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		5000
+using smoothing parameter k=1.200000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+818 correct out of 1000 (81.8%).
+Testing...
+771 correct out of 1000 (77.1%).
+
+Doing classification
+--------------------------------------------------
+data:				digits
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		5000
+using smoothing parameter k=1.300000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+818 correct out of 1000 (81.8%).
+Testing...
+771 correct out of 1000 (77.1%).
+
+Doing classification
+--------------------------------------------------
+data:				digits
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		5000
+using smoothing parameter k=1.400000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+817 correct out of 1000 (81.7%).
+Testing...
+771 correct out of 1000 (77.1%).
+
+Doing classification
+--------------------------------------------------
+data:				digits
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		5000
+using smoothing parameter k=1.500000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+817 correct out of 1000 (81.7%).
+Testing...
+771 correct out of 1000 (77.1%).
+
+Doing classification
+--------------------------------------------------
+data:				digits
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		5000
+using smoothing parameter k=1.600000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+817 correct out of 1000 (81.7%).
+Testing...
+770 correct out of 1000 (77.0%).
+
+Doing classification
+--------------------------------------------------
+data:				digits
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		5000
+using smoothing parameter k=1.700000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+817 correct out of 1000 (81.7%).
+Testing...
+770 correct out of 1000 (77.0%).
+
+Doing classification
+--------------------------------------------------
+data:				digits
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		5000
+using smoothing parameter k=1.800000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+817 correct out of 1000 (81.7%).
+Testing...
+770 correct out of 1000 (77.0%).
+
+Doing classification
+--------------------------------------------------
+data:				digits
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		5000
+using smoothing parameter k=1.900000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+817 correct out of 1000 (81.7%).
+Testing...
+770 correct out of 1000 (77.0%).
+
+Doing classification
+--------------------------------------------------
+data:				digits
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		5000
+using smoothing parameter k=2.000000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+817 correct out of 1000 (81.7%).
+Testing...
+770 correct out of 1000 (77.0%).
+
+Doing classification
+--------------------------------------------------
+data:				digits
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		5000
+using smoothing parameter k=2.100000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+817 correct out of 1000 (81.7%).
+Testing...
+771 correct out of 1000 (77.1%).
+
+Doing classification
+--------------------------------------------------
+data:				digits
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		5000
+using smoothing parameter k=2.200000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+817 correct out of 1000 (81.7%).
+Testing...
+771 correct out of 1000 (77.1%).
+
+Doing classification
+--------------------------------------------------
+data:				digits
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		5000
+using smoothing parameter k=2.300000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+817 correct out of 1000 (81.7%).
+Testing...
+771 correct out of 1000 (77.1%).
+
+Doing classification
+--------------------------------------------------
+data:				digits
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		5000
+using smoothing parameter k=2.400000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+817 correct out of 1000 (81.7%).
+Testing...
+772 correct out of 1000 (77.2%).
+
+Doing classification
+--------------------------------------------------
+data:				digits
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		5000
+using smoothing parameter k=2.500000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+817 correct out of 1000 (81.7%).
+Testing...
+772 correct out of 1000 (77.2%).
+
+Doing classification
+--------------------------------------------------
+data:				digits
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		5000
+using smoothing parameter k=2.600000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+817 correct out of 1000 (81.7%).
+Testing...
+772 correct out of 1000 (77.2%).
+
+Doing classification
+--------------------------------------------------
+data:				digits
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		5000
+using smoothing parameter k=2.700000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+818 correct out of 1000 (81.8%).
+Testing...
+773 correct out of 1000 (77.3%).
+
+Doing classification
+--------------------------------------------------
+data:				digits
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		5000
+using smoothing parameter k=2.800000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+818 correct out of 1000 (81.8%).
+Testing...
+773 correct out of 1000 (77.3%).
+
+Doing classification
+--------------------------------------------------
+data:				digits
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		5000
+using smoothing parameter k=2.900000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+818 correct out of 1000 (81.8%).
+Testing...
+773 correct out of 1000 (77.3%).
+
+Doing classification
+--------------------------------------------------
+data:				digits
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		5000
+using smoothing parameter k=3.000000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+818 correct out of 1000 (81.8%).
+Testing...
+773 correct out of 1000 (77.3%).
+
+Doing classification
+--------------------------------------------------
+data:				digits
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		5000
+using smoothing parameter k=3.100000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+818 correct out of 1000 (81.8%).
+Testing...
+773 correct out of 1000 (77.3%).
+
+Doing classification
+--------------------------------------------------
+data:				digits
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		5000
+using smoothing parameter k=3.200000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+818 correct out of 1000 (81.8%).
+Testing...
+773 correct out of 1000 (77.3%).
+
+Doing classification
+--------------------------------------------------
+data:				digits
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		5000
+using smoothing parameter k=3.300000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+818 correct out of 1000 (81.8%).
+Testing...
+773 correct out of 1000 (77.3%).
+
+Doing classification
+--------------------------------------------------
+data:				digits
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		5000
+using smoothing parameter k=3.400000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+818 correct out of 1000 (81.8%).
+Testing...
+773 correct out of 1000 (77.3%).
+
+Doing classification
+--------------------------------------------------
+data:				digits
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		5000
+using smoothing parameter k=3.500000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+818 correct out of 1000 (81.8%).
+Testing...
+773 correct out of 1000 (77.3%).
+
+Doing classification
+--------------------------------------------------
+data:				digits
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		5000
+using smoothing parameter k=3.600000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+818 correct out of 1000 (81.8%).
+Testing...
+773 correct out of 1000 (77.3%).
+
+Doing classification
+--------------------------------------------------
+data:				digits
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		5000
+using smoothing parameter k=3.700000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+818 correct out of 1000 (81.8%).
+Testing...
+773 correct out of 1000 (77.3%).
+
+Doing classification
+--------------------------------------------------
+data:				digits
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		5000
+using smoothing parameter k=3.800000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+818 correct out of 1000 (81.8%).
+Testing...
+773 correct out of 1000 (77.3%).
+
+Doing classification
+--------------------------------------------------
+data:				digits
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		5000
+using smoothing parameter k=3.900000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+817 correct out of 1000 (81.7%).
+Testing...
+773 correct out of 1000 (77.3%).
+
+Doing classification
+--------------------------------------------------
+data:				digits
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		5000
+using smoothing parameter k=4.000000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+817 correct out of 1000 (81.7%).
+Testing...
+773 correct out of 1000 (77.3%).
+
+Doing classification
+--------------------------------------------------
+data:				digits
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		5000
+using smoothing parameter k=4.100000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+817 correct out of 1000 (81.7%).
+Testing...
+773 correct out of 1000 (77.3%).
+
+Doing classification
+--------------------------------------------------
+data:				digits
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		5000
+using smoothing parameter k=4.200000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+817 correct out of 1000 (81.7%).
+Testing...
+773 correct out of 1000 (77.3%).
+
+Doing classification
+--------------------------------------------------
+data:				digits
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		5000
+using smoothing parameter k=4.300000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+817 correct out of 1000 (81.7%).
+Testing...
+773 correct out of 1000 (77.3%).
+
+Doing classification
+--------------------------------------------------
+data:				digits
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		5000
+using smoothing parameter k=4.400000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+817 correct out of 1000 (81.7%).
+Testing...
+773 correct out of 1000 (77.3%).
+
+Doing classification
+--------------------------------------------------
+data:				digits
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		5000
+using smoothing parameter k=4.500000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+817 correct out of 1000 (81.7%).
+Testing...
+773 correct out of 1000 (77.3%).
+
+Doing classification
+--------------------------------------------------
+data:				digits
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		5000
+using smoothing parameter k=4.600000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+817 correct out of 1000 (81.7%).
+Testing...
+773 correct out of 1000 (77.3%).
+
+Doing classification
+--------------------------------------------------
+data:				digits
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		5000
+using smoothing parameter k=4.700000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+817 correct out of 1000 (81.7%).
+Testing...
+773 correct out of 1000 (77.3%).
+
+Doing classification
+--------------------------------------------------
+data:				digits
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		5000
+using smoothing parameter k=4.800000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+817 correct out of 1000 (81.7%).
+Testing...
+773 correct out of 1000 (77.3%).
+
+Doing classification
+--------------------------------------------------
+data:				digits
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		5000
+using smoothing parameter k=4.900000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+817 correct out of 1000 (81.7%).
+Testing...
+773 correct out of 1000 (77.3%).
+
+Doing classification
+--------------------------------------------------
+data:				digits
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		5000
+using smoothing parameter k=5.000000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+817 correct out of 1000 (81.7%).
+Testing...
+773 correct out of 1000 (77.3%).
+
