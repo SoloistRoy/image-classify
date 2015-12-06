@@ -7,8 +7,8 @@
 # For more info, see http://inst.eecs.berkeley.edu/~cs188/sp09/pacman.html
 
 import util
-import classificationMethod
 import math
+import classificationMethod
 
 class NaiveBayesClassifier(classificationMethod.ClassificationMethod):
   """

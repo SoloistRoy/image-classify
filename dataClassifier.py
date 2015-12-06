@@ -12,7 +12,6 @@ import sys
 from featureExtractor import *
 
 
-
 def analysis(classifier, guesses, testLabels, testData, rawTestData, printImage):
     """
     This function is called after learning.
@@ -80,12 +79,20 @@ class ImagePrinter:
 def default(str):
     return str + ' [Default: %default]'
 
+MF, PT, NB, NN = 0, 1, 2, 3
+CLASSIFIER = {
+    MF: 'Most Frequent',
+    PT: 'Perception',
+    NB: 'Naive Bayes',
+    NN: 'Neural Network'
+}
+
 def readCommand( argv ):
     "Processes the command used to run from the command line."
     from optparse import OptionParser    
     parser = OptionParser(USAGE_STRING)
 
-    parser.add_option('-c', '--classifier', help=default('The type of classifier'), choices=['mostFrequent', 'nb', 'naiveBayes', 'perceptron'], default='mostFrequent')
+    parser.add_option('-c', '--classifier', help=default('Classifier=' + str(CLASSIFIER)), default=0, type="int")
     parser.add_option('-d', '--data', help=default('Dataset to use'), choices=['digits', 'faces'], default='digits')
     parser.add_option('-t', '--training', help=default('The size of the training set'), default=100, type="int")
     parser.add_option('-f', '--features', help=default('Whether to use enhanced features'), default=False, action="store_true")
@@ -97,6 +104,7 @@ def readCommand( argv ):
     parser.add_option('-a', '--autotune', help=default("Whether to automatically tune hyperparameters"), default=False, action="store_true")
     parser.add_option('-i', '--iterations', help=default("Maximum iterations to run training"), default=3, type="int")
     parser.add_option('-s', '--test', help=default("Amount of test data to use"), default=TEST_SET_SIZE, type="int")
+    parser.add_option('-l', '--layerSize', help=default('Layer Size for Neural Network'), default=3, type="int")
 
     options, otherjunk = parser.parse_args(argv)
     if len(otherjunk) != 0: raise Exception('Command line input not understood: ' + str(otherjunk))
@@ -104,37 +112,30 @@ def readCommand( argv ):
 
     # Set up variables according to the command line input.
     print "Doing classification"
-    print "--------------------"
-    print "data:\t\t" + options.data
-    print "classifier:\t\t" + options.classifier
-    if not options.classifier == 'minicontest':
-        print "using enhanced features?:\t" + str(options.features)
-    else:
-        print "using minicontest feature extractor"
-    print "training set size:\t" + str(options.training)
+    print "--------------------------------------------------"
+    print "data:\t\t\t\t" + options.data
+    print "classifier:\t\t\t" + CLASSIFIER[options.classifier]
+    print "using enhanced features:\t" + str(options.features)
+    print "training set size:\t\t" + str(options.training)
+
     if(options.data=="digits"):
         printImage = ImagePrinter(DIGIT_DATUM_WIDTH, DIGIT_DATUM_HEIGHT).printImage
         if (options.features):
             featureFunction = enhancedFeatureExtractorDigit
         else:
             featureFunction = basicFeatureExtractorDigit
-        if (options.classifier == 'minicontest'):
-            featureFunction = contestFeatureExtractorDigit
+        legalLabels = range(10)
     elif(options.data=="faces"):
         printImage = ImagePrinter(FACE_DATUM_WIDTH, FACE_DATUM_HEIGHT).printImage
         if (options.features):
             featureFunction = enhancedFeatureExtractorFace
         else:
             featureFunction = basicFeatureExtractorFace            
+        legalLabels = range(2)
     else:
         print "Unknown dataset", options.data
         print USAGE_STRING
         sys.exit(2)
-
-    if(options.data=="digits"):
-        legalLabels = range(10)
-    else:
-        legalLabels = range(2)
 
     if options.training <= 0:
         print "Training set size should be a positive integer (you provided: %d)" % options.training
@@ -152,33 +153,35 @@ def readCommand( argv ):
             print USAGE_STRING
             sys.exit(2)
 
-    if(options.classifier == "mostFrequent"):
+    if(options.classifier == MF):
         classifier = mostFrequent.MostFrequentClassifier(legalLabels)
-    elif(options.classifier == "naiveBayes" or options.classifier == "nb"):
+    elif(options.classifier == PT):
+        classifier = perceptron.PerceptronClassifier(legalLabels, options.iterations)
+        print "iterations:\t\t\t" + str(options.iterations)
+    elif(options.classifier == NB):
         classifier = naiveBayes.NaiveBayesClassifier(legalLabels)
         classifier.setSmoothing(options.smoothing)
         if (options.autotune):
-            print "using automatic tuning for naivebayes"
+            print "using automatic tuning:\t\tTrue"
             classifier.automaticTuning = True
         else:
             print "using smoothing parameter k=%f for naivebayes" % options.smoothing
-    elif(options.classifier == "perceptron"):
-        classifier = perceptron.PerceptronClassifier(legalLabels,options.iterations)
-    elif(options.classifier == "mira"):
-        classifier = mira.MiraClassifier(legalLabels, options.iterations)
+    elif(options.classifier == NN):
+        classifier = neuralNet.NeuralNetClassifier(legalLabels, options.iterations, options.layerSize)
+        print "iterations:\t\t\t" + str(options.iterations)
+        print "layer size:\t\t\t" + str(options.layerSize)
+        print "using automatic tuning:\t\t" + str(options.autotune)
         if (options.autotune):
-            print "using automatic tuning for MIRA"
+            # TODO
             classifier.automaticTuning = True
         else:
-            print "using default C=0.001 for MIRA"
-    elif(options.classifier == 'minicontest'):
-        import minicontest
-        classifier = minicontest.contestClassifier(legalLabels)
+            print "using default parameter:\teta=0.25"
     else:
         print "Unknown classifier:", options.classifier
         print USAGE_STRING
-
         sys.exit(2)
+
+    print "--------------------------------------------------"
 
     args['classifier'] = classifier
     args['featureFunction'] = featureFunction
@@ -190,16 +193,15 @@ USAGE_STRING = """
     USAGE: python dataClassifier.py <options>
     EXAMPLES: 
     (1) python dataClassifier.py
-     - trains the default mostFrequent classifier on the digit
-       dataset using the default 100 training examples and then test
-       the classifier on test data
+     - trains the default mostFrequent classifier on the digit dataset using
+       the default 100 training examples and then test the classifier on test
+       data
     (2) python dataClassifier.py -c naiveBayes -d digits -t 1000 -f -o -1 3 -2 6 -k 2.5
-     - would run the naive Bayes classifier on 1000 training examples
-       using the enhancedFeatureExtractorDigits function to get the
-       features on the faces dataset, would use the smoothing
-       parameter equals to 2.5, would test the classifier on the test
-       data and performs an odd ratio analysis with label1=3 vs.
-       label2=6 
+     - would run the naive Bayes classifier on 1000 training examples using the
+       enhancedFeatureExtractorDigits function to get the features on the faces
+       dataset, would use the smoothing parameter equals to 2.5, would test the
+       classifier on the test data and performs an odd ratio analysis with
+       label1=3 vs.  label2=6 
 """
 
 # Main harness code
@@ -250,10 +252,10 @@ def runClassifier(args, options):
     analysis(classifier, guesses, testLabels, testData, rawTestData, printImage)
 
     # do odds ratio computation if specified at command line
-    if((options.odds) & (options.classifier == "naiveBayes" or (options.classifier == "nb")) ):
+    if((options.odds) & (options.classifier == NB) ):
         label1, label2 = options.label1, options.label2
         features_odds = classifier.findHighOddsFeatures(label1,label2)
-        if(options.classifier == "naiveBayes" or options.classifier == "nb"):
+        if(options.classifier == NB):
             string3 = "=== Features with highest odd ratio of label %d over label %d ===" % (label1, label2)
         else:
             string3 = "=== Features for which weight(label %d)-weight(label %d) is biggest ===" % (label1, label2)        
@@ -261,7 +263,7 @@ def runClassifier(args, options):
         print string3
         printImage(features_odds)
 
-    if((options.weights) & (options.classifier == "perceptron")):
+    if((options.weights) & (options.classifier == PT)):
         for l in classifier.legalLabels:
             features_weights = classifier.findHighWeightFeatures(l)
             print ("=== Features with high weight for label %d ==="%l)
