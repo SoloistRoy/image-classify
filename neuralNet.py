@@ -19,7 +19,6 @@ class NeuralNetClassifier(classificationMethod.ClassificationMethod):
 
     def __init__(self, legalLabels, iterations, layerSize, type , eta = 0.25):
         self.legalLabels = legalLabels
-        self.iterations = iterations
         self.layerSize = layerSize
         self.times = iterations;
         self.eta = eta
@@ -143,7 +142,7 @@ class NeuralNetClassifier(classificationMethod.ClassificationMethod):
         result = []
         for i in range(len(data)):
             inputData = self.getArrayValueOfImg(data[i])
-            result.append(self.getPrediction(inputData[i]))
+            result.append(self.getPrediction(inputData))
         return result
 
     def getPrediction(self,inputData):
