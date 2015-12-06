@@ -21,11 +21,16 @@ class NeuralNetClassifier(classificationMethod.ClassificationMethod):
         self.legalLabels = legalLabels
         self.iterations = iterations
         self.layerSize = layerSize
+        self.times = iterations;
         self.eta = eta
         if(type == "faces"):
-            self.inputSize = 2
+            self.ImgHeight = FACE_DATUM_HEIGHT
+            self.ImgWidth = FACE_DATUM_WIDTH
+            self.inputSize = self.ImgHeight * self.ImgWidth
         else:
-            self.inputSize = 10
+            self.ImgHeight = DIGIT_DATUM_HEIGHT
+            self.ImgWidth = DIGIT_DATUM_WIDTH
+            self.inputSize = self.ImgHeight * self.ImgWidth
         self.data = [[0 for col in range(self.inputSize)] for row in range(self.layerSize - 1)]
         self.prediction = -1;
 
@@ -47,7 +52,23 @@ class NeuralNetClassifier(classificationMethod.ClassificationMethod):
 
     def train(self, trainingData, trainingLabels, validationData, validationLabels):
         "Outside shell to call your method. Do not modify this method."
-        pass
+        for t in range(self.times):
+            for i in range(len(trainingData)):
+                inputData = self.getArrayValueOfImg(trainingData[i])
+                label = trainingLabels[i]
+                self.backProcTrain(inputData,label)
+            for i in range(len(validationData)):
+                inputData = self.getArrayValueOfImg(validationData)
+                label = validationLabels[i]
+                self.backProcTrain(inputData,label)
+
+    def getArrayValueOfImg(self, item):
+        array = []
+        for i in reversed(range(self.ImgHeight)):
+            for j in range(self.ImgWidth):
+                array.append(item[(j,i)])
+        return array
+
 
     def backProcTrain(self, inputData, label):
         self.loadData(inputData)
@@ -119,10 +140,14 @@ class NeuralNetClassifier(classificationMethod.ClassificationMethod):
         for that label.  See the project description for details.
         Recall that a datum is a util.counter...
         """
-        for i in range(data):
-            self.getPrediction(data[i])
+        result = []
+        for i in range(len(data)):
+            inputData = self.getArrayValueOfImg(data[i])
+            result.append(self.getPrediction(inputData[i]))
+        return result
 
     def getPrediction(self,inputData):
         self.loadData(inputData)
         self.forecast()
+        return self.prediction
 
