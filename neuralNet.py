@@ -58,7 +58,7 @@ class NeuralNetClassifier(classificationMethod.ClassificationMethod):
                 label = trainingLabels[i]
                 self.backProcTrain(inputData,label)
             for i in range(len(validationData)):
-                inputData = self.getArrayValueOfImg(validationData)
+                inputData = self.getArrayValueOfImg(validationData[i])
                 label = validationLabels[i]
                 self.backProcTrain(inputData,label)
 
