@@ -33,7 +33,7 @@ class ClassificationMethod:
         certain parameters with a small held-out validation set.
 
         For some classifiers (naive Bayes, MIRA), you will need to return the
-        parameters' values after traning and tuning step.
+        parameters' values after training and tuning step.
         
         To make the classifier generic to multiple problems, the data should be
         represented as lists of Counters containing feature descriptions and
