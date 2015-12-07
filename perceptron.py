@@ -3,6 +3,7 @@
 
 import util
 import classificationMethod
+import random
 PRINT = True
 
 class PerceptronClassifier(classificationMethod.ClassificationMethod):
@@ -42,17 +43,14 @@ class PerceptronClassifier(classificationMethod.ClassificationMethod):
   
         for iteration in range(self.max_iterations):
             print "Starting iteration ", iteration, "..."
-            for i in range(len(trainingData)):
-
-                "*** YOUR CODE HERE ***"
-                feature=trainingData[i]
-                assumption = self.classify(trainingData[i])[0]
+            random.shuffle(trainingData)
+            for i, feature in enumerate(trainingData):
+                assumption = self.classify(feature)[0]
                 truth = trainingLabels[i]
                 if truth != assumption:
                     self.weights[truth] += feature
                     self.weights[assumption] -= feature   
 
-                # util.raiseNotDefined()
   
     def classify(self, data ):
         """
@@ -79,8 +77,5 @@ class PerceptronClassifier(classificationMethod.ClassificationMethod):
         "*** YOUR CODE HERE ***"
         sortedweight=self.weight[label].sortedkeys()
         featuresWeights=sortedweight[0:100]
-        
-
-        #util.raiseNotDefined()
 
         return featuresWeights
