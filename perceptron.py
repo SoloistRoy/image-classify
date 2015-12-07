@@ -43,8 +43,16 @@ class PerceptronClassifier(classificationMethod.ClassificationMethod):
         for iteration in range(self.max_iterations):
             print "Starting iteration ", iteration, "..."
             for i in range(len(trainingData)):
+
                 "*** YOUR CODE HERE ***"
-                util.raiseNotDefined()
+                feature=trainingData[i]
+                assumption = max（self.classify(trainingData[i])）
+                truth = trainingLabels[i]
+                if truth != assumption:
+                    self.weights[truth] += feature
+                    self.weights[assumption] -= feature   
+
+                # util.raiseNotDefined()
   
     def classify(self, data ):
         """
@@ -69,6 +77,10 @@ class PerceptronClassifier(classificationMethod.ClassificationMethod):
         featuresWeights = []
 
         "*** YOUR CODE HERE ***"
-        util.raiseNotDefined()
+        sortedweight=self.weight[label].sortedkeys()
+        featuresWeights=sortedweight[0:100]
+        
+
+        #util.raiseNotDefined()
 
         return featuresWeights
