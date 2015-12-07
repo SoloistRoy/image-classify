@@ -46,7 +46,7 @@ class PerceptronClassifier(classificationMethod.ClassificationMethod):
 
                 "*** YOUR CODE HERE ***"
                 feature=trainingData[i]
-                assumption = max（self.classify(trainingData[i])）
+                assumption = self.classify(trainingData[i])[0]
                 truth = trainingLabels[i]
                 if truth != assumption:
                     self.weights[truth] += feature
