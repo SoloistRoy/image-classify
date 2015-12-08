@@ -43,16 +43,20 @@ class PerceptronClassifier(classificationMethod.ClassificationMethod):
   
         for iteration in range(self.max_iterations):
             print "Starting iteration ", iteration, "..."
-            random.shuffle(trainingData)
-            for i, feature in enumerate(trainingData):
-                assumption = self.classify(feature)[0]
+            indices = range(len(trainingData))
+            random.shuffle(indices)
+            for i in indices:
+                feature = trainingData[i]
+                vectors = util.Counter()
+                for l in self.legalLabels:
+                    vectors[l] = self.weights[l] * feature
+                assumption = vectors.argMax()
                 truth = trainingLabels[i]
                 if truth != assumption:
                     self.weights[truth] += feature
                     self.weights[assumption] -= feature   
-
   
-    def classify(self, data ):
+    def classify(self, data):
         """
         Classifies each datum as the label that most closely matches the prototype vector
         for that label.  See the project description for details.
