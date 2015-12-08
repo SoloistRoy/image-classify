@@ -1,9 +1,9 @@
 Doing classification
 --------------------------------------------------
-data:				digits
+data:				faces
 classifier:			Perception
 using enhanced features:	False
-training set size:		5000
+training set size:		451
 iterations:			5
 --------------------------------------------------
 Extracting features...
@@ -14,16 +14,16 @@ Starting iteration  2 ...
 Starting iteration  3 ...
 Starting iteration  4 ...
 Validating...
-844 correct out of 1000 (84.4%).
+148 correct out of 150 (98.7%).
 Testing...
-801 correct out of 1000 (80.1%).
+131 correct out of 150 (87.3%).
 
 Doing classification
 --------------------------------------------------
-data:				digits
+data:				faces
 classifier:			Perception
 using enhanced features:	False
-training set size:		5000
+training set size:		451
 iterations:			5
 --------------------------------------------------
 Extracting features...
@@ -34,16 +34,16 @@ Starting iteration  2 ...
 Starting iteration  3 ...
 Starting iteration  4 ...
 Validating...
-839 correct out of 1000 (83.9%).
+149 correct out of 150 (99.3%).
 Testing...
-811 correct out of 1000 (81.1%).
+129 correct out of 150 (86.0%).
 
 Doing classification
 --------------------------------------------------
-data:				digits
+data:				faces
 classifier:			Perception
 using enhanced features:	False
-training set size:		5000
+training set size:		451
 iterations:			5
 --------------------------------------------------
 Extracting features...
@@ -54,16 +54,16 @@ Starting iteration  2 ...
 Starting iteration  3 ...
 Starting iteration  4 ...
 Validating...
-835 correct out of 1000 (83.5%).
+145 correct out of 150 (96.7%).
 Testing...
-810 correct out of 1000 (81.0%).
+130 correct out of 150 (86.7%).
 
 Doing classification
 --------------------------------------------------
-data:				digits
+data:				faces
 classifier:			Perception
 using enhanced features:	False
-training set size:		5000
+training set size:		451
 iterations:			5
 --------------------------------------------------
 Extracting features...
@@ -74,16 +74,16 @@ Starting iteration  2 ...
 Starting iteration  3 ...
 Starting iteration  4 ...
 Validating...
-817 correct out of 1000 (81.7%).
+149 correct out of 150 (99.3%).
 Testing...
-802 correct out of 1000 (80.2%).
+133 correct out of 150 (88.7%).
 
 Doing classification
 --------------------------------------------------
-data:				digits
+data:				faces
 classifier:			Perception
 using enhanced features:	False
-training set size:		5000
+training set size:		451
 iterations:			5
 --------------------------------------------------
 Extracting features...
@@ -94,16 +94,16 @@ Starting iteration  2 ...
 Starting iteration  3 ...
 Starting iteration  4 ...
 Validating...
-794 correct out of 1000 (79.4%).
+146 correct out of 150 (97.3%).
 Testing...
-788 correct out of 1000 (78.8%).
+123 correct out of 150 (82.0%).
 
 Doing classification
 --------------------------------------------------
-data:				digits
+data:				faces
 classifier:			Perception
 using enhanced features:	False
-training set size:		5000
+training set size:		451
 iterations:			5
 --------------------------------------------------
 Extracting features...
@@ -114,16 +114,16 @@ Starting iteration  2 ...
 Starting iteration  3 ...
 Starting iteration  4 ...
 Validating...
-810 correct out of 1000 (81.0%).
+150 correct out of 150 (100.0%).
 Testing...
-783 correct out of 1000 (78.3%).
+135 correct out of 150 (90.0%).
 
 Doing classification
 --------------------------------------------------
-data:				digits
+data:				faces
 classifier:			Perception
 using enhanced features:	False
-training set size:		5000
+training set size:		451
 iterations:			5
 --------------------------------------------------
 Extracting features...
@@ -134,16 +134,16 @@ Starting iteration  2 ...
 Starting iteration  3 ...
 Starting iteration  4 ...
 Validating...
-840 correct out of 1000 (84.0%).
+149 correct out of 150 (99.3%).
 Testing...
-809 correct out of 1000 (80.9%).
+135 correct out of 150 (90.0%).
 
 Doing classification
 --------------------------------------------------
-data:				digits
+data:				faces
 classifier:			Perception
 using enhanced features:	False
-training set size:		5000
+training set size:		451
 iterations:			5
 --------------------------------------------------
 Extracting features...
@@ -154,16 +154,16 @@ Starting iteration  2 ...
 Starting iteration  3 ...
 Starting iteration  4 ...
 Validating...
-824 correct out of 1000 (82.4%).
+150 correct out of 150 (100.0%).
 Testing...
-790 correct out of 1000 (79.0%).
+129 correct out of 150 (86.0%).
 
 Doing classification
 --------------------------------------------------
-data:				digits
+data:				faces
 classifier:			Perception
 using enhanced features:	False
-training set size:		5000
+training set size:		451
 iterations:			5
 --------------------------------------------------
 Extracting features...
@@ -174,16 +174,16 @@ Starting iteration  2 ...
 Starting iteration  3 ...
 Starting iteration  4 ...
 Validating...
-816 correct out of 1000 (81.6%).
+149 correct out of 150 (99.3%).
 Testing...
-796 correct out of 1000 (79.6%).
+125 correct out of 150 (83.3%).
 
 Doing classification
 --------------------------------------------------
-data:				digits
+data:				faces
 classifier:			Perception
 using enhanced features:	False
-training set size:		5000
+training set size:		451
 iterations:			5
 --------------------------------------------------
 Extracting features...
@@ -194,16 +194,16 @@ Starting iteration  2 ...
 Starting iteration  3 ...
 Starting iteration  4 ...
 Validating...
-812 correct out of 1000 (81.2%).
+149 correct out of 150 (99.3%).
 Testing...
-779 correct out of 1000 (77.9%).
+130 correct out of 150 (86.7%).
 
 Doing classification
 --------------------------------------------------
-data:				digits
+data:				faces
 classifier:			Perception
 using enhanced features:	False
-training set size:		5000
+training set size:		451
 iterations:			5
 --------------------------------------------------
 Extracting features...
@@ -214,16 +214,16 @@ Starting iteration  2 ...
 Starting iteration  3 ...
 Starting iteration  4 ...
 Validating...
-795 correct out of 1000 (79.5%).
+150 correct out of 150 (100.0%).
 Testing...
-767 correct out of 1000 (76.7%).
+132 correct out of 150 (88.0%).
 
 Doing classification
 --------------------------------------------------
-data:				digits
+data:				faces
 classifier:			Perception
 using enhanced features:	False
-training set size:		5000
+training set size:		451
 iterations:			5
 --------------------------------------------------
 Extracting features...
@@ -234,16 +234,16 @@ Starting iteration  2 ...
 Starting iteration  3 ...
 Starting iteration  4 ...
 Validating...
-818 correct out of 1000 (81.8%).
+150 correct out of 150 (100.0%).
 Testing...
-793 correct out of 1000 (79.3%).
+134 correct out of 150 (89.3%).
 
 Doing classification
 --------------------------------------------------
-data:				digits
+data:				faces
 classifier:			Perception
 using enhanced features:	False
-training set size:		5000
+training set size:		451
 iterations:			5
 --------------------------------------------------
 Extracting features...
@@ -254,16 +254,16 @@ Starting iteration  2 ...
 Starting iteration  3 ...
 Starting iteration  4 ...
 Validating...
-831 correct out of 1000 (83.1%).
+149 correct out of 150 (99.3%).
 Testing...
-792 correct out of 1000 (79.2%).
+130 correct out of 150 (86.7%).
 
 Doing classification
 --------------------------------------------------
-data:				digits
+data:				faces
 classifier:			Perception
 using enhanced features:	False
-training set size:		5000
+training set size:		451
 iterations:			5
 --------------------------------------------------
 Extracting features...
@@ -274,16 +274,16 @@ Starting iteration  2 ...
 Starting iteration  3 ...
 Starting iteration  4 ...
 Validating...
-821 correct out of 1000 (82.1%).
+150 correct out of 150 (100.0%).
 Testing...
-795 correct out of 1000 (79.5%).
+123 correct out of 150 (82.0%).
 
 Doing classification
 --------------------------------------------------
-data:				digits
+data:				faces
 classifier:			Perception
 using enhanced features:	False
-training set size:		5000
+training set size:		451
 iterations:			5
 --------------------------------------------------
 Extracting features...
@@ -294,16 +294,16 @@ Starting iteration  2 ...
 Starting iteration  3 ...
 Starting iteration  4 ...
 Validating...
-777 correct out of 1000 (77.7%).
+150 correct out of 150 (100.0%).
 Testing...
-751 correct out of 1000 (75.1%).
+133 correct out of 150 (88.7%).
 
 Doing classification
 --------------------------------------------------
-data:				digits
+data:				faces
 classifier:			Perception
 using enhanced features:	False
-training set size:		5000
+training set size:		451
 iterations:			5
 --------------------------------------------------
 Extracting features...
@@ -314,16 +314,16 @@ Starting iteration  2 ...
 Starting iteration  3 ...
 Starting iteration  4 ...
 Validating...
-835 correct out of 1000 (83.5%).
+150 correct out of 150 (100.0%).
 Testing...
-816 correct out of 1000 (81.6%).
+130 correct out of 150 (86.7%).
 
 Doing classification
 --------------------------------------------------
-data:				digits
+data:				faces
 classifier:			Perception
 using enhanced features:	False
-training set size:		5000
+training set size:		451
 iterations:			5
 --------------------------------------------------
 Extracting features...
@@ -334,16 +334,16 @@ Starting iteration  2 ...
 Starting iteration  3 ...
 Starting iteration  4 ...
 Validating...
-831 correct out of 1000 (83.1%).
+150 correct out of 150 (100.0%).
 Testing...
-814 correct out of 1000 (81.4%).
+133 correct out of 150 (88.7%).
 
 Doing classification
 --------------------------------------------------
-data:				digits
+data:				faces
 classifier:			Perception
 using enhanced features:	False
-training set size:		5000
+training set size:		451
 iterations:			5
 --------------------------------------------------
 Extracting features...
@@ -354,16 +354,16 @@ Starting iteration  2 ...
 Starting iteration  3 ...
 Starting iteration  4 ...
 Validating...
-829 correct out of 1000 (82.9%).
+150 correct out of 150 (100.0%).
 Testing...
-790 correct out of 1000 (79.0%).
+132 correct out of 150 (88.0%).
 
 Doing classification
 --------------------------------------------------
-data:				digits
+data:				faces
 classifier:			Perception
 using enhanced features:	False
-training set size:		5000
+training set size:		451
 iterations:			5
 --------------------------------------------------
 Extracting features...
@@ -374,16 +374,16 @@ Starting iteration  2 ...
 Starting iteration  3 ...
 Starting iteration  4 ...
 Validating...
-836 correct out of 1000 (83.6%).
+146 correct out of 150 (97.3%).
 Testing...
-814 correct out of 1000 (81.4%).
+128 correct out of 150 (85.3%).
 
 Doing classification
 --------------------------------------------------
-data:				digits
+data:				faces
 classifier:			Perception
 using enhanced features:	False
-training set size:		5000
+training set size:		451
 iterations:			5
 --------------------------------------------------
 Extracting features...
@@ -394,7 +394,7 @@ Starting iteration  2 ...
 Starting iteration  3 ...
 Starting iteration  4 ...
 Validating...
-827 correct out of 1000 (82.7%).
+147 correct out of 150 (98.0%).
 Testing...
-787 correct out of 1000 (78.7%).
+129 correct out of 150 (86.0%).
 

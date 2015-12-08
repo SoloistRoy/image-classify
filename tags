@@ -1,0 +1,128 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CLASSIFIER	dataClassifier.py	/^CLASSIFIER = {$/;"	v
+ClassificationMethod	classificationMethod.py	/^class ClassificationMethod:$/;"	c	inherits:
+Counter	util.py	/^class Counter(dict):$/;"	c	inherits:dict
+DATUM_HEIGHT	samples.py	/^DATUM_HEIGHT = 0 # in pixels$/;"	v
+DATUM_WIDTH	samples.py	/^DATUM_WIDTH = 0 # in pixels$/;"	v
+DIGIT_DATUM_HEIGHT	featureExtractor.py	/^DIGIT_DATUM_HEIGHT = 28$/;"	v
+DIGIT_DATUM_WIDTH	featureExtractor.py	/^DIGIT_DATUM_WIDTH = 28$/;"	v
+Datum	samples.py	/^class Datum:$/;"	c	inherits:
+FACE_DATUM_HEIGHT	featureExtractor.py	/^FACE_DATUM_HEIGHT = 70$/;"	v
+FACE_DATUM_WIDTH	featureExtractor.py	/^FACE_DATUM_WIDTH = 60$/;"	v
+ImagePrinter	dataClassifier.py	/^class ImagePrinter:$/;"	c	inherits:
+IntegerConversionFunction	samples.py	/^def IntegerConversionFunction(character):$/;"	f	access:public
+MostFrequentClassifier	mostFrequent.py	/^class MostFrequentClassifier(classificationMethod.ClassificationMethod):$/;"	c	inherits:classificationMethod.ClassificationMethod
+NaiveBayesClassifier	naiveBayes.py	/^class NaiveBayesClassifier(classificationMethod.ClassificationMethod):$/;"	c	inherits:classificationMethod.ClassificationMethod
+NeuralNetClassifier	neuralNet.py	/^class NeuralNetClassifier(classificationMethod.ClassificationMethod):$/;"	c	inherits:classificationMethod.ClassificationMethod
+PRINT	neuralNet.py	/^PRINT = True$/;"	v
+PRINT	perceptron.py	/^PRINT = True$/;"	v
+PerceptronClassifier	perceptron.py	/^class PerceptronClassifier(classificationMethod.ClassificationMethod):$/;"	c	inherits:classificationMethod.ClassificationMethod
+PriorityQueue	util.py	/^class PriorityQueue:$/;"	c	inherits:
+PriorityQueueWithFunction	util.py	/^class PriorityQueueWithFunction(PriorityQueue):$/;"	c	inherits:PriorityQueue
+Queue	util.py	/^class Queue:$/;"	c	inherits:
+Stack	util.py	/^class Stack:$/;"	c	inherits:
+TEST_SET_SIZE	featureExtractor.py	/^TEST_SET_SIZE = 100$/;"	v
+TimeoutFunction	util.py	/^class TimeoutFunction:$/;"	c	inherits:
+TimeoutFunctionException	util.py	/^class TimeoutFunctionException(Exception):$/;"	c	inherits:Exception
+__add__	util.py	/^    def __add__( self, y ):$/;"	m	class:Counter	file:	access:private
+__call__	util.py	/^    def __call__(self, *args):$/;"	m	class:TimeoutFunction	file:	access:private
+__getitem__	util.py	/^    def __getitem__(self, idx):$/;"	m	class:Counter	file:	access:private
+__init__	classificationMethod.py	/^    def __init__(self, legalLabels):$/;"	m	class:ClassificationMethod	access:public
+__init__	dataClassifier.py	/^    def __init__(self, width, height):$/;"	m	class:ImagePrinter	access:public
+__init__	mostFrequent.py	/^    def __init__(self, legalLabels):$/;"	m	class:MostFrequentClassifier	access:public
+__init__	naiveBayes.py	/^    def __init__(self, legalLabels):$/;"	m	class:NaiveBayesClassifier	access:public
+__init__	neuralNet.py	/^    def __init__(self, legalLabels, iterations, layerSize, type , eta = 0.25):$/;"	m	class:NeuralNetClassifier	access:public
+__init__	perceptron.py	/^    def __init__( self, legalLabels, max_iterations):$/;"	m	class:PerceptronClassifier	access:public
+__init__	samples.py	/^    def __init__(self, data,width,height):$/;"	m	class:Datum	access:public
+__init__	util.py	/^    def    __init__(self):    $/;"	m	class:PriorityQueue	access:public
+__init__	util.py	/^    def    __init__(self, priorityFunction):$/;"	m	class:PriorityQueueWithFunction	access:public
+__init__	util.py	/^    def __init__(self):$/;"	m	class:Queue	access:public
+__init__	util.py	/^    def __init__(self):$/;"	m	class:Stack	access:public
+__init__	util.py	/^    def __init__(self, function, timeout):$/;"	m	class:TimeoutFunction	access:public
+__mul__	util.py	/^    def __mul__(self, y ):$/;"	m	class:Counter	file:	access:private
+__radd__	util.py	/^    def __radd__(self, y):$/;"	m	class:Counter	file:	access:private
+__str__	samples.py	/^    def __str__(self):$/;"	m	class:Datum	file:	access:private
+__sub__	util.py	/^    def __sub__( self, y ):$/;"	m	class:Counter	file:	access:private
+_test	samples.py	/^def _test():$/;"	f	access:public
+analysis	dataClassifier.py	/^def analysis(classifier, guesses, testLabels, testData, rawTestData, printImage):$/;"	f	access:public
+argMax	util.py	/^    def argMax(self):$/;"	m	class:Counter	access:public
+arrayInvert	util.py	/^def arrayInvert(array):$/;"	f	access:public
+asciiGrayscaleConversionFunction	samples.py	/^def asciiGrayscaleConversionFunction(value):$/;"	f	access:public
+backProcTrain	neuralNet.py	/^    def backProcTrain(self, inputData, label):$/;"	m	class:NeuralNetClassifier	access:public
+basicFeatureExtractorDigit	featureExtractor.py	/^def basicFeatureExtractorDigit(datum):$/;"	f	access:public
+basicFeatureExtractorFace	featureExtractor.py	/^def basicFeatureExtractorFace(datum):$/;"	f	access:public
+calculateDelta	neuralNet.py	/^    def calculateDelta(self):$/;"	m	class:NeuralNetClassifier	access:public
+calculateLogJointProbabilities	naiveBayes.py	/^    def calculateLogJointProbabilities(self, datum):$/;"	m	class:NaiveBayesClassifier	access:public
+chooseFromDistribution	util.py	/^def chooseFromDistribution( distribution ):$/;"	f	access:public
+classify	classificationMethod.py	/^    def classify(self, data):$/;"	m	class:ClassificationMethod	access:public
+classify	mostFrequent.py	/^    def classify(self, testData):$/;"	m	class:MostFrequentClassifier	access:public
+classify	naiveBayes.py	/^    def classify(self, testData):$/;"	m	class:NaiveBayesClassifier	access:public
+classify	neuralNet.py	/^    def classify(self, data):$/;"	m	class:NeuralNetClassifier	access:public
+classify	perceptron.py	/^    def classify(self, data):$/;"	m	class:PerceptronClassifier	access:public
+convertToInteger	samples.py	/^def convertToInteger(data):$/;"	f	access:public
+copy	util.py	/^    def copy(self):$/;"	m	class:Counter	access:public
+default	dataClassifier.py	/^def default(str):$/;"	f	access:public
+derivativeSigmoid	neuralNet.py	/^    def derivativeSigmoid(self,val):$/;"	m	class:NeuralNetClassifier	access:public
+divideAll	util.py	/^    def divideAll(self, divisor):$/;"	m	class:Counter	access:public
+enhancedFeatureExtractorDigit	featureExtractor.py	/^def enhancedFeatureExtractorDigit(datum):$/;"	f	access:public
+enhancedFeatureExtractorFace	featureExtractor.py	/^def enhancedFeatureExtractorFace(datum):$/;"	f	access:public
+findHighOddsFeatures	naiveBayes.py	/^    def findHighOddsFeatures(self, label1, label2):$/;"	m	class:NaiveBayesClassifier	access:public
+findHighWeightFeatures	perceptron.py	/^    def findHighWeightFeatures(self, label):$/;"	m	class:PerceptronClassifier	access:public
+flipCoin	util.py	/^def flipCoin( p ):$/;"	f	access:public
+forecast	neuralNet.py	/^    def forecast(self):$/;"	m	class:NeuralNetClassifier	access:public
+getArrayValueOfImg	neuralNet.py	/^    def getArrayValueOfImg(self, item):$/;"	m	class:NeuralNetClassifier	access:public
+getAsciiString	samples.py	/^    def getAsciiString(self):$/;"	m	class:Datum	access:public
+getPixel	samples.py	/^    def getPixel(self, column, row):$/;"	m	class:Datum	access:public
+getPixels	samples.py	/^    def getPixels(self):$/;"	m	class:Datum	access:public
+getPrediction	neuralNet.py	/^    def getPrediction(self,inputData):$/;"	m	class:NeuralNetClassifier	access:public
+getProbability	util.py	/^def getProbability(value, distribution, values):$/;"	f	access:public
+handle_timeout	util.py	/^    def handle_timeout(self, signum, frame):$/;"	m	class:TimeoutFunction	access:public
+incrementAll	util.py	/^    def incrementAll(self, keys, count):$/;"	m	class:Counter	access:public
+isEmpty	util.py	/^    def isEmpty(self):$/;"	m	class:PriorityQueue	access:public
+isEmpty	util.py	/^    def isEmpty(self):$/;"	m	class:Queue	access:public
+isEmpty	util.py	/^    def isEmpty(self):$/;"	m	class:Stack	access:public
+loadData	neuralNet.py	/^    def loadData(self, inputData):$/;"	m	class:NeuralNetClassifier	access:public
+loadDataFile	samples.py	/^def loadDataFile(filename, n,width,height):$/;"	f	access:public
+loadLabel	neuralNet.py	/^    def loadLabel(self, label):$/;"	m	class:NeuralNetClassifier	access:public
+loadLabelsFile	samples.py	/^def loadLabelsFile(filename, n):$/;"	f	access:public
+lookup	util.py	/^def lookup(name, namespace):$/;"	f	access:public
+manhattanDistance	util.py	/^def manhattanDistance( xy1, xy2 ):$/;"	f	access:public
+matrixAsList	util.py	/^def matrixAsList( matrix, value = True ):$/;"	f	access:public
+nSample	util.py	/^def nSample(distribution, values, n):$/;"	f	access:public
+nearestPoint	util.py	/^def nearestPoint( pos ):$/;"	f	access:public
+normalize	util.py	/^    def normalize(self):$/;"	m	class:Counter	access:public
+normalize	util.py	/^def normalize(vectorOrCounter):$/;"	f	access:public
+pause	util.py	/^def pause():$/;"	f	access:public
+pop	util.py	/^    def pop(self):$/;"	m	class:PriorityQueue	access:public
+pop	util.py	/^    def pop(self):$/;"	m	class:Queue	access:public
+pop	util.py	/^    def pop(self):$/;"	m	class:Stack	access:public
+printImage	dataClassifier.py	/^    def printImage(self, pixels):$/;"	m	class:ImagePrinter	access:public
+push	util.py	/^    def push(self, item):$/;"	m	class:PriorityQueueWithFunction	access:public
+push	util.py	/^    def push(self, item, priority):$/;"	m	class:PriorityQueue	access:public
+push	util.py	/^    def push(self,item):$/;"	m	class:Queue	access:public
+push	util.py	/^    def push(self,item):$/;"	m	class:Stack	access:public
+raiseNotDefined	util.py	/^def raiseNotDefined():$/;"	f	access:public
+randomizeWeight	neuralNet.py	/^    def randomizeWeight(self):$/;"	m	class:NeuralNetClassifier	access:public
+readCommand	dataClassifier.py	/^def readCommand( argv ):$/;"	f	access:public
+readlines	samples.py	/^def readlines(filename):$/;"	f	access:public
+runClassifier	dataClassifier.py	/^def runClassifier(args, options):$/;"	f	access:public
+sample	util.py	/^def sample(distribution, values = None):$/;"	f	access:public
+sampleFromCounter	util.py	/^def sampleFromCounter(ctr):$/;"	f	access:public
+setSmoothing	naiveBayes.py	/^    def setSmoothing(self, k):$/;"	m	class:NaiveBayesClassifier	access:public
+setWeights	perceptron.py	/^    def setWeights(self, weights):$/;"	m	class:PerceptronClassifier	access:public
+sigmod	neuralNet.py	/^    def sigmod(self,val):$/;"	m	class:NeuralNetClassifier	access:public
+sign	util.py	/^def sign( x ):$/;"	f	access:public
+sortedKeys	util.py	/^    def sortedKeys(self):$/;"	m	class:Counter	access:public
+totalCount	util.py	/^    def totalCount(self):$/;"	m	class:Counter	access:public
+train	classificationMethod.py	/^    def train(self, trainingData, trainingLabels, validationData,$/;"	m	class:ClassificationMethod	access:public
+train	mostFrequent.py	/^    def train(self, data, labels, validationData, validationLabels):$/;"	m	class:MostFrequentClassifier	access:public
+train	naiveBayes.py	/^    def train(self, trainingData, trainingLabels, validationData, validationLabels):$/;"	m	class:NaiveBayesClassifier	access:public
+train	neuralNet.py	/^    def train(self, trainingData, trainingLabels, validationData, validationLabels):$/;"	m	class:NeuralNetClassifier	access:public
+train	perceptron.py	/^    def train( self, trainingData, trainingLabels, validationData, validationLabels ):$/;"	m	class:PerceptronClassifier	access:public
+trainAndTune	naiveBayes.py	/^    def trainAndTune(self, trainingData, trainingLabels, validationData, validationLabels, kgrid):$/;"	m	class:NaiveBayesClassifier	access:public
+updateWeight	neuralNet.py	/^    def updateWeight(self):$/;"	m	class:NeuralNetClassifier	access:public
