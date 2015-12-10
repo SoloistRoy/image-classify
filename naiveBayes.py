@@ -59,24 +59,29 @@ class NaiveBayesClassifier(classificationMethod.ClassificationMethod):
         To get the list of all possible features or labels, use self.features and 
         self.legalLabels.
         """
+
+        fvals = trainingData[0].values()
         
-        prior = util.Counter()
+        self.prior = util.Counter()
         for i in trainingLabels:
-            priori[i] += 1
-        prior.normalize()
+            self.prior[i] += 1
+        self.prior.normalize()
 
         ## Define: condCount[i] = #(f_j,y=label_i) where f_j is jth feature
-        condProb = []
-        for i in legalLabels:
-            condProb[i] = {}
+        self.condProb = {}
+        for i in self.legalLabels:
+            self.condProb[i] = {}
             for j in trainingData[0]:
-                pass
-        
-        for i, img in enumerate(trainingData):
-            cc = condCounts[trainingLabels[i]]
+                self.condProb[i][j] = util.Counter()
+                for m in fvals:
+                    self.condProb[i][j][m] = 1
+        for n, img in enumerate(trainingData):
+            i = trainingLabels[n]
             for j in img:
-                cc[(j, )] += 1
-        util.raiseNotDefined()
+                self.condProb[i][j][img[j]] += self.k   # smoothing
+        for i in self.legalLabels:
+            for j in trainingData[0]:
+                self.condProb[i][j].normalize()
                 
     def classify(self, testData):
         """
@@ -102,10 +107,10 @@ class NaiveBayesClassifier(classificationMethod.ClassificationMethod):
         self.legalLabels.
         """
         logJoint = util.Counter()
-        
-        "*** YOUR CODE HERE ***"
-        util.raiseNotDefined()
-        
+        for i in self.legalLabels:
+            logJoint[i] = math.log(self.prior[i], 2)
+            for j in datum:
+                logJoint[i] += math.log(self.condProb[i][j][datum[j]], 2)
         return logJoint
     
     def findHighOddsFeatures(self, label1, label2):

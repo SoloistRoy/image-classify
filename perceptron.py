@@ -3,6 +3,7 @@
 
 import util
 import classificationMethod
+import random
 PRINT = True
 
 class PerceptronClassifier(classificationMethod.ClassificationMethod):
@@ -42,11 +43,20 @@ class PerceptronClassifier(classificationMethod.ClassificationMethod):
   
         for iteration in range(self.max_iterations):
             print "Starting iteration ", iteration, "..."
-            for i in range(len(trainingData)):
-                "*** YOUR CODE HERE ***"
-                util.raiseNotDefined()
+            indices = range(len(trainingData))
+            random.shuffle(indices)
+            for i in indices:
+                feature = trainingData[i]
+                vectors = util.Counter()
+                for l in self.legalLabels:
+                    vectors[l] = self.weights[l] * feature
+                assumption = vectors.argMax()
+                truth = trainingLabels[i]
+                if truth != assumption:
+                    self.weights[truth] += feature
+                    self.weights[assumption] -= feature   
   
-    def classify(self, data ):
+    def classify(self, data):
         """
         Classifies each datum as the label that most closely matches the prototype vector
         for that label.  See the project description for details.
@@ -69,6 +79,7 @@ class PerceptronClassifier(classificationMethod.ClassificationMethod):
         featuresWeights = []
 
         "*** YOUR CODE HERE ***"
-        util.raiseNotDefined()
+        sortedweight=self.weight[label].sortedkeys()
+        featuresWeights=sortedweight[0:100]
 
         return featuresWeights

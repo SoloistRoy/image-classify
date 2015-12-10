@@ -1,0 +1,750 @@
+Doing classification
+--------------------------------------------------
+data:				faces
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		451
+using smoothing parameter k=0.100000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+137 correct out of 150 (91.3%).
+Testing...
+128 correct out of 150 (85.3%).
+
+Doing classification
+--------------------------------------------------
+data:				faces
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		451
+using smoothing parameter k=0.200000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+139 correct out of 150 (92.7%).
+Testing...
+130 correct out of 150 (86.7%).
+
+Doing classification
+--------------------------------------------------
+data:				faces
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		451
+using smoothing parameter k=0.300000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+139 correct out of 150 (92.7%).
+Testing...
+135 correct out of 150 (90.0%).
+
+Doing classification
+--------------------------------------------------
+data:				faces
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		451
+using smoothing parameter k=0.400000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+139 correct out of 150 (92.7%).
+Testing...
+135 correct out of 150 (90.0%).
+
+Doing classification
+--------------------------------------------------
+data:				faces
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		451
+using smoothing parameter k=0.500000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+139 correct out of 150 (92.7%).
+Testing...
+135 correct out of 150 (90.0%).
+
+Doing classification
+--------------------------------------------------
+data:				faces
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		451
+using smoothing parameter k=0.600000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+139 correct out of 150 (92.7%).
+Testing...
+135 correct out of 150 (90.0%).
+
+Doing classification
+--------------------------------------------------
+data:				faces
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		451
+using smoothing parameter k=0.700000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+139 correct out of 150 (92.7%).
+Testing...
+135 correct out of 150 (90.0%).
+
+Doing classification
+--------------------------------------------------
+data:				faces
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		451
+using smoothing parameter k=0.800000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+139 correct out of 150 (92.7%).
+Testing...
+136 correct out of 150 (90.7%).
+
+Doing classification
+--------------------------------------------------
+data:				faces
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		451
+using smoothing parameter k=0.900000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+140 correct out of 150 (93.3%).
+Testing...
+136 correct out of 150 (90.7%).
+
+Doing classification
+--------------------------------------------------
+data:				faces
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		451
+using smoothing parameter k=1.000000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+141 correct out of 150 (94.0%).
+Testing...
+136 correct out of 150 (90.7%).
+
+Doing classification
+--------------------------------------------------
+data:				faces
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		451
+using smoothing parameter k=1.100000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+141 correct out of 150 (94.0%).
+Testing...
+135 correct out of 150 (90.0%).
+
+Doing classification
+--------------------------------------------------
+data:				faces
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		451
+using smoothing parameter k=1.200000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+141 correct out of 150 (94.0%).
+Testing...
+134 correct out of 150 (89.3%).
+
+Doing classification
+--------------------------------------------------
+data:				faces
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		451
+using smoothing parameter k=1.300000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+141 correct out of 150 (94.0%).
+Testing...
+135 correct out of 150 (90.0%).
+
+Doing classification
+--------------------------------------------------
+data:				faces
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		451
+using smoothing parameter k=1.400000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+141 correct out of 150 (94.0%).
+Testing...
+135 correct out of 150 (90.0%).
+
+Doing classification
+--------------------------------------------------
+data:				faces
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		451
+using smoothing parameter k=1.500000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+141 correct out of 150 (94.0%).
+Testing...
+135 correct out of 150 (90.0%).
+
+Doing classification
+--------------------------------------------------
+data:				faces
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		451
+using smoothing parameter k=1.600000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+141 correct out of 150 (94.0%).
+Testing...
+135 correct out of 150 (90.0%).
+
+Doing classification
+--------------------------------------------------
+data:				faces
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		451
+using smoothing parameter k=1.700000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+141 correct out of 150 (94.0%).
+Testing...
+135 correct out of 150 (90.0%).
+
+Doing classification
+--------------------------------------------------
+data:				faces
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		451
+using smoothing parameter k=1.800000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+140 correct out of 150 (93.3%).
+Testing...
+134 correct out of 150 (89.3%).
+
+Doing classification
+--------------------------------------------------
+data:				faces
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		451
+using smoothing parameter k=1.900000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+141 correct out of 150 (94.0%).
+Testing...
+134 correct out of 150 (89.3%).
+
+Doing classification
+--------------------------------------------------
+data:				faces
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		451
+using smoothing parameter k=2.000000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+141 correct out of 150 (94.0%).
+Testing...
+134 correct out of 150 (89.3%).
+
+Doing classification
+--------------------------------------------------
+data:				faces
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		451
+using smoothing parameter k=2.100000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+141 correct out of 150 (94.0%).
+Testing...
+134 correct out of 150 (89.3%).
+
+Doing classification
+--------------------------------------------------
+data:				faces
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		451
+using smoothing parameter k=2.200000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+141 correct out of 150 (94.0%).
+Testing...
+134 correct out of 150 (89.3%).
+
+Doing classification
+--------------------------------------------------
+data:				faces
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		451
+using smoothing parameter k=2.300000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+141 correct out of 150 (94.0%).
+Testing...
+134 correct out of 150 (89.3%).
+
+Doing classification
+--------------------------------------------------
+data:				faces
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		451
+using smoothing parameter k=2.400000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+141 correct out of 150 (94.0%).
+Testing...
+134 correct out of 150 (89.3%).
+
+Doing classification
+--------------------------------------------------
+data:				faces
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		451
+using smoothing parameter k=2.500000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+141 correct out of 150 (94.0%).
+Testing...
+134 correct out of 150 (89.3%).
+
+Doing classification
+--------------------------------------------------
+data:				faces
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		451
+using smoothing parameter k=2.600000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+141 correct out of 150 (94.0%).
+Testing...
+134 correct out of 150 (89.3%).
+
+Doing classification
+--------------------------------------------------
+data:				faces
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		451
+using smoothing parameter k=2.700000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+141 correct out of 150 (94.0%).
+Testing...
+133 correct out of 150 (88.7%).
+
+Doing classification
+--------------------------------------------------
+data:				faces
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		451
+using smoothing parameter k=2.800000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+141 correct out of 150 (94.0%).
+Testing...
+133 correct out of 150 (88.7%).
+
+Doing classification
+--------------------------------------------------
+data:				faces
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		451
+using smoothing parameter k=2.900000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+141 correct out of 150 (94.0%).
+Testing...
+133 correct out of 150 (88.7%).
+
+Doing classification
+--------------------------------------------------
+data:				faces
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		451
+using smoothing parameter k=3.000000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+141 correct out of 150 (94.0%).
+Testing...
+133 correct out of 150 (88.7%).
+
+Doing classification
+--------------------------------------------------
+data:				faces
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		451
+using smoothing parameter k=3.100000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+141 correct out of 150 (94.0%).
+Testing...
+133 correct out of 150 (88.7%).
+
+Doing classification
+--------------------------------------------------
+data:				faces
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		451
+using smoothing parameter k=3.200000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+141 correct out of 150 (94.0%).
+Testing...
+133 correct out of 150 (88.7%).
+
+Doing classification
+--------------------------------------------------
+data:				faces
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		451
+using smoothing parameter k=3.300000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+141 correct out of 150 (94.0%).
+Testing...
+133 correct out of 150 (88.7%).
+
+Doing classification
+--------------------------------------------------
+data:				faces
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		451
+using smoothing parameter k=3.400000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+141 correct out of 150 (94.0%).
+Testing...
+133 correct out of 150 (88.7%).
+
+Doing classification
+--------------------------------------------------
+data:				faces
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		451
+using smoothing parameter k=3.500000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+141 correct out of 150 (94.0%).
+Testing...
+132 correct out of 150 (88.0%).
+
+Doing classification
+--------------------------------------------------
+data:				faces
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		451
+using smoothing parameter k=3.600000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+141 correct out of 150 (94.0%).
+Testing...
+132 correct out of 150 (88.0%).
+
+Doing classification
+--------------------------------------------------
+data:				faces
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		451
+using smoothing parameter k=3.700000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+141 correct out of 150 (94.0%).
+Testing...
+132 correct out of 150 (88.0%).
+
+Doing classification
+--------------------------------------------------
+data:				faces
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		451
+using smoothing parameter k=3.800000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+141 correct out of 150 (94.0%).
+Testing...
+132 correct out of 150 (88.0%).
+
+Doing classification
+--------------------------------------------------
+data:				faces
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		451
+using smoothing parameter k=3.900000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+141 correct out of 150 (94.0%).
+Testing...
+132 correct out of 150 (88.0%).
+
+Doing classification
+--------------------------------------------------
+data:				faces
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		451
+using smoothing parameter k=4.000000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+141 correct out of 150 (94.0%).
+Testing...
+132 correct out of 150 (88.0%).
+
+Doing classification
+--------------------------------------------------
+data:				faces
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		451
+using smoothing parameter k=4.100000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+141 correct out of 150 (94.0%).
+Testing...
+132 correct out of 150 (88.0%).
+
+Doing classification
+--------------------------------------------------
+data:				faces
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		451
+using smoothing parameter k=4.200000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+141 correct out of 150 (94.0%).
+Testing...
+132 correct out of 150 (88.0%).
+
+Doing classification
+--------------------------------------------------
+data:				faces
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		451
+using smoothing parameter k=4.300000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+141 correct out of 150 (94.0%).
+Testing...
+132 correct out of 150 (88.0%).
+
+Doing classification
+--------------------------------------------------
+data:				faces
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		451
+using smoothing parameter k=4.400000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+141 correct out of 150 (94.0%).
+Testing...
+132 correct out of 150 (88.0%).
+
+Doing classification
+--------------------------------------------------
+data:				faces
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		451
+using smoothing parameter k=4.500000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+141 correct out of 150 (94.0%).
+Testing...
+132 correct out of 150 (88.0%).
+
+Doing classification
+--------------------------------------------------
+data:				faces
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		451
+using smoothing parameter k=4.600000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+141 correct out of 150 (94.0%).
+Testing...
+132 correct out of 150 (88.0%).
+
+Doing classification
+--------------------------------------------------
+data:				faces
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		451
+using smoothing parameter k=4.700000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+141 correct out of 150 (94.0%).
+Testing...
+132 correct out of 150 (88.0%).
+
+Doing classification
+--------------------------------------------------
+data:				faces
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		451
+using smoothing parameter k=4.800000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+141 correct out of 150 (94.0%).
+Testing...
+132 correct out of 150 (88.0%).
+
+Doing classification
+--------------------------------------------------
+data:				faces
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		451
+using smoothing parameter k=4.900000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+141 correct out of 150 (94.0%).
+Testing...
+132 correct out of 150 (88.0%).
+
+Doing classification
+--------------------------------------------------
+data:				faces
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		451
+using smoothing parameter k=5.000000 for naivebayes
+--------------------------------------------------
+Extracting features...
+Training...
+Validating...
+141 correct out of 150 (94.0%).
+Testing...
+132 correct out of 150 (88.0%).
+

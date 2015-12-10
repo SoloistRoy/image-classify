@@ -1,0 +1,135 @@
+Doing classification
+--------------------------------------------------
+data:				faces
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		5000
+using smoothing parameter k=0.100000 for naivebayes
+--------------------------------------------------
+
+Doing classification
+--------------------------------------------------
+data:				faces
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		5000
+using smoothing parameter k=0.200000 for naivebayes
+--------------------------------------------------
+
+Doing classification
+--------------------------------------------------
+data:				faces
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		5000
+using smoothing parameter k=0.300000 for naivebayes
+--------------------------------------------------
+
+Doing classification
+--------------------------------------------------
+data:				faces
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		5000
+using smoothing parameter k=0.400000 for naivebayes
+--------------------------------------------------
+
+Doing classification
+--------------------------------------------------
+data:				faces
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		5000
+using smoothing parameter k=0.500000 for naivebayes
+--------------------------------------------------
+
+Doing classification
+--------------------------------------------------
+data:				faces
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		5000
+using smoothing parameter k=0.600000 for naivebayes
+--------------------------------------------------
+
+Doing classification
+--------------------------------------------------
+data:				faces
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		5000
+using smoothing parameter k=0.700000 for naivebayes
+--------------------------------------------------
+
+Doing classification
+--------------------------------------------------
+data:				faces
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		5000
+using smoothing parameter k=0.800000 for naivebayes
+--------------------------------------------------
+
+Doing classification
+--------------------------------------------------
+data:				faces
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		5000
+using smoothing parameter k=0.900000 for naivebayes
+--------------------------------------------------
+
+Doing classification
+--------------------------------------------------
+data:				faces
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		5000
+using smoothing parameter k=1.000000 for naivebayes
+--------------------------------------------------
+
+Doing classification
+--------------------------------------------------
+data:				faces
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		5000
+using smoothing parameter k=1.100000 for naivebayes
+--------------------------------------------------
+
+Doing classification
+--------------------------------------------------
+data:				faces
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		5000
+using smoothing parameter k=1.200000 for naivebayes
+--------------------------------------------------
+
+Doing classification
+--------------------------------------------------
+data:				faces
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		5000
+using smoothing parameter k=1.300000 for naivebayes
+--------------------------------------------------
+
+Doing classification
+--------------------------------------------------
+data:				faces
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		5000
+using smoothing parameter k=1.400000 for naivebayes
+--------------------------------------------------
+
+Doing classification
+--------------------------------------------------
+data:				faces
+classifier:			Naive Bayes
+using enhanced features:	False
+training set size:		5000
+using smoothing parameter k=1.500000 for naivebayes
+--------------------------------------------------
+
