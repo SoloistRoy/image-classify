@@ -16,11 +16,10 @@ class NeuralNetClassifier(classificationMethod.ClassificationMethod):
     (not to a raw samples.Datum).
     """
 
-    def __init__(self, legalLabels, iterations, layerSize, type, eta=0.25):
+    def __init__(self, legalLabels, iterations, layerSize, type, eta=0.3):
         self.legalLabels = legalLabels
         self.layerSize = layerSize
-        self.times = iterations;
-
+        self.times = iterations
         if (type == "faces"):
             self.ImgHeight = FACE_DATUM_HEIGHT
             self.ImgWidth = FACE_DATUM_WIDTH
@@ -49,7 +48,7 @@ class NeuralNetClassifier(classificationMethod.ClassificationMethod):
         self.pre_inp_hid_weight = [[0 for col in range(self.hideSize + 1)] for row in range(self.inputSize + 1)]
         self.pre_hid_out_weight = [[0 for col in range(self.outSize + 1)] for row in range(self.hideSize + 1)]
         self.eta = eta
-        self.move = 0.75
+        self.move = 0.5
 
     def randomizeWeight(self):
         tmp = random.random()
@@ -59,7 +58,9 @@ class NeuralNetClassifier(classificationMethod.ClassificationMethod):
         "Outside shell to call your method. Do not modify this method."
         for t in range(self.times):
             print t
-            for i in range(len(trainingData)):
+            indeces = range(len(trainingData))
+            random.shuffle(indeces);
+            for i in indeces:
                 #self.normalizaInput(trainingData[i])
                 inputData = self.getArrayValueOfImg(trainingData[i])
                 self.backProcTrain(inputData, trainingLabels[i])
