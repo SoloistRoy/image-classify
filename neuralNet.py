@@ -48,7 +48,7 @@ class NeuralNetClassifier(classificationMethod.ClassificationMethod):
         self.pre_inp_hid_weight = [[0 for col in range(self.hideSize + 1)] for row in range(self.inputSize + 1)]
         self.pre_hid_out_weight = [[0 for col in range(self.outSize + 1)] for row in range(self.hideSize + 1)]
         self.eta = eta
-        self.move = 0.5
+        self.move = 1
 
     def randomizeWeight(self):
         tmp = random.random()
@@ -89,6 +89,7 @@ class NeuralNetClassifier(classificationMethod.ClassificationMethod):
             sum = 0
             for i in range(self.inputSize + 1):
                 sum += self.inp_hid_weight[i][j] * self.input_data[i]
+            #print sum
             self.hide_data[j] = self.sigmod(sum)
 
         self.hide_data[0] = 1
@@ -125,16 +126,18 @@ class NeuralNetClassifier(classificationMethod.ClassificationMethod):
         self.hide_data[0] = 1
         for i in range(self.outSize + 1):
             for j in range(self.hideSize + 1):
-                val = self.move * self.pre_hid_out_weight[j][i] + self.eta * self.out_delta[i] * self.hide_data[j]
-                self.hid_out_weight[j][i] += val
-                self.pre_hid_out_weight[j][i] = val
+                #val = self.move * self.pre_hid_out_weight[j][i] + self.eta * self.out_delta[i] * self.hide_data[j]
+                #self.hid_out_weight[j][i] += val
+                #self.pre_hid_out_weight[j][i] = val
+                self.hid_out_weight[j][i] = self.hid_out_weight[j][i] * self.move + self.eta * self.out_delta[i] * self.hide_data[j]
 
         self.input_data[0] = 1
         for i in range(self.hideSize + 1):
             for j in range(self.inputSize + 1):
-                val = self.move * self.pre_inp_hid_weight[j][i] + self.eta * self.hid_delta[i] * self.input_data[j]
-                self.inp_hid_weight[j][i] += val
-                self.pre_inp_hid_weight[j][i] = val
+                #val = self.move * self.pre_inp_hid_weight[j][i] + self.eta * self.hid_delta[i] * self.input_data[j]
+                #self.inp_hid_weight[j][i] += val
+                #self.pre_inp_hid_weight[j][i] = val
+                self.pre_inp_hid_weight[j][i] = self.pre_inp_hid_weight[j][i] * self.move + self.eta * self.hid_delta[i] * self.input_data[j]
 
     def sigmod(self, val):
         return 1.0 / (1.0 + math.exp(-val))
