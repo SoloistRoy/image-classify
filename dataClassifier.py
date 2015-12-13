@@ -79,15 +79,16 @@ class ImagePrinter:
 def default(str):
     return str + ' [Default: %default]'
 
-MF, PT, NB, NN = 0, 1, 2, 3
+MF, PT, NB, NN, LR = 0, 1, 2, 3, 4
 CLASSIFIER = {
     MF: 'Most Frequent',
     PT: 'Perception',
     NB: 'Naive Bayes',
-    NN: 'Neural Network'
+    NN: 'Neural Network',
+    LR: 'Logistic Regression'
 }
 
-def readCommand( argv ):
+def readCommand(argv):
     "Processes the command used to run from the command line."
     from optparse import OptionParser    
     parser = OptionParser(USAGE_STRING)
